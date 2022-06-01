@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/vistoria.css">
     <link rel="stylesheet" href="css/header.css">
     <title>Document</title>
+
+    <!-- pwa links -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="https://bochilof.github.io/pwazug/" />
 </head>
 <body id="body">
     <header>
@@ -77,6 +81,16 @@
     <script src="js/menu-mobile.js"></script>
     <script src="js/localStorage.js"></script>
     <script src="js/image-preview.js"></script>
+
+    <!-- P W A   SCRIPT -->
+    <script>
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register (
+            'sw.js',
+            {scope: '/pwazug/'}
+          )
+        }
+    </script>
 
 </body>
 </html>
