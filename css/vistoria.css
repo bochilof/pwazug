@@ -1,0 +1,113 @@
+.container-formulario-vistoria{
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-vistoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.form-vistoria-container-foto{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-vistoria-container-foto-miniaturas{
+    display: flex;
+}
+
+.form-vistoria-container-foto-miniaturas-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+    overflow: hidden;
+}
+
+.form-vistoria-container-foto-miniaturas-item img{
+    max-width: 50px;
+}
+
+#input-file{
+    display: none;
+}
+
+.form-vistoria-container-foto-container-label{
+   margin: 10px 0px;
+}
+
+.form-vistoria-container-foto-container-label label{
+    background-color: #DEDEDE;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-vistoria-container-dados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-vistoria-container-dados input[type="text"],
+.form-vistoria-container-dados textarea{
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-vistoria-container-dados textarea{
+    height: 100px;
+    resize: none;
+}
+
+/* B O T Õ E S */
+.form-vistoria-container-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-vistoria-container-submit input{
+    padding: 7px 14px;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    box-shadow: 3px 3px 3px #666;
+    margin-top: 20px;
+    background-color: #CCC;
+}
+
+.form-vistoria-container-botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-vistoria-container-botoes .btn{
+    background-color: #DEDEDE;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+    .container-formulario-vistoria{
+        width: 95%;
+    }
+
+    .form-vistoria{
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/vistoria.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <header>
+        <div class="logo">logo</div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li>início</li>
+                <li>upload</li>
+            </ul>
+        </nav>
+        <div class="btn-mobile" onclick="toggleMenu()">
+            <div class="btn-mobile-line"></div>
+            <div class="btn-mobile-line"></div>
+            <div class="btn-mobile-line"></div>
+        </div>
+    </header>
+    <div class="container-formulario-vistoria">
+        <form enctype="multipart/form-data" class="form-vistoria" action="#" method="POST">
+        
+            <!-- I N P U T   F I L E -->
+            <div class="form-vistoria-container-foto">
+                <!-- container para exibição de miniaturas -->
+                <div class="form-vistoria-container-foto-miniaturas">
+                    <div class="form-vistoria-container-foto-miniaturas-item">
+                        <img id="min-a" src="" alt="" srcset="">
+                    </div>
+                </div>
+                
+                <!-- input file oculto -->
+                <input type="file" name="" id="input-file" accept="image/*" multiple="multiple" onclick="exibirMiniaturas()">
+                
+                <!-- label do input file -->
+                <div class="form-vistoria-container-foto-container-label">
+                    <label for="input-file">Carregar Imagens</label>
+                </div>
+            </div>
+    
+            <!-- D A D O S  -->
+            <div class="form-vistoria-container-dados">
+                <input type="text" name="nome-da-empresa" id="nome-da-empresa" placeholder="Nome da empresa">
+                <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ">
+                <input type="text" name="identificacao-da-fonte" id="identificacao-da-fonte" placeholder="Identificação da fonte">
+                <input type="text" name="descricao-do-processo" id="descricao-do-processo" placeholder="Descrição do processo">
+                <input type="text" name="marca" id="marca" placeholder="Marca">
+                <input type="text" name="combustivel" id="combustivel" placeholder="Combustível">
+                <input type="text" name="producao-de-vapor" id="producao-de-vapor" placeholder="Produção de vapor">
+                <input type="text" name="potencia-termica-nominal" id="potencia-termica-nominal" placeholder="Potência térmica nominal">
+                <input type="text" name="tratamento" id="tratamento" placeholder="Tratamento">
+                <input type="text" name="tipo-de-fonte" id="tipo-de-fonte" placeholder="Tipo de fonte">
+                <input type="text" name="horas-de-trabalho-semanal" id="horas-de-trabalho-semanal" placeholder="Horas de trabalho semanal">
+                <input type="text" name="horas-de-trabalho-anual" id="horas-de-trabalho-anual" placeholder="Horas de trabalho anual">
+                <input type="text" name="enquadramento-na-legislacao" id="enquadramento-na-legislacao" placeholder="Enquadramento na legislação">
+                <input type="text" name="altura-da-chamine" id="altura-da-chamine" placeholder="Altura da chaminé">
+                <input type="text" name="diametro-da-chamine" id="diametro-da-chamine" placeholder="Diâmetro da chaminé">
+                <input type="text" name="padrao-de-emissao" id="padrao-de-emissao" placeholder="Padrão de emissão">
+                <input type="text" name="frequencia-de-amostragem" id="frequencia-de-amostragem" placeholder="Frequência de amostragem">
+                <textarea name="observacoes" id="observacoes" cols="30" rows="10" placeholder="Observações..."></textarea>
+            </div>
+
+            <!-- B O T Õ E S -->
+            <div class="form-vistoria-container-botoes">
+                <div class="btn" onclick="gerarDados()">Salvar</div>
+            </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/localStorage.js"></script>
+    <script src="js/image-preview.js"></script>
+
+</body>
+</html>
