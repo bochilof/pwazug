@@ -1,6 +1,6 @@
 var GHPATH = '/pwazug';
 var APP_PREFIX = 'pwazug_';
-var VERSION = 'v0004';
+var VERSION = 'v0005';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
