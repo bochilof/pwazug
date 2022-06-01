@@ -21,6 +21,7 @@
             <ul>
                 <li>início</li>
                 <li>upload</li>
+                <a href="consulta.html"><li>consulta</li></a>
             </ul>
         </nav>
         <div class="btn-mobile" onclick="toggleMenu()">
@@ -34,19 +35,17 @@
         
             <!-- I N P U T   F I L E -->
             <div class="form-vistoria-container-foto">
-                <!-- container para exibição de miniaturas -->
-                <div class="form-vistoria-container-foto-miniaturas">
-                    <div class="form-vistoria-container-foto-miniaturas-item">
-                        <img id="min-a" src="" alt="" srcset="">
-                    </div>
-                </div>
-                
+
                 <!-- input file oculto -->
-                <input type="file" name="" id="input-file" accept="image/*" multiple="multiple" onclick="exibirMiniaturas()">
-                
+                <input type="file" name="" id="input-file" accept="image/*" multiple="multiple">
                 <!-- label do input file -->
                 <div class="form-vistoria-container-foto-container-label">
                     <label for="input-file">Carregar Imagens</label>
+                </div>
+
+                <!-- container para exibição de miniaturas -->
+                <div class="form-vistoria-container-foto-miniaturas" id="form-vistoria-container-foto-miniaturas">
+                    <label id="form-vistoria-container-foto-miniaturas-label-alerta" for=""></label>
                 </div>
             </div>
     
@@ -79,9 +78,12 @@
     </div>
 
     <!-- JAVASCRIPT -->
+
     <script src="js/menu-mobile.js"></script>
     <script src="js/localStorage.js"></script>
     <script src="js/image-preview.js"></script>
+
+    <script>document.getElementById('input-file').addEventListener('change', msgInputFile);</script>
 
     <!-- P W A   SCRIPT -->
     <script>

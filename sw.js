@@ -1,16 +1,18 @@
 var GHPATH = '/pwazug';
 var APP_PREFIX = 'pwazug_';
-var VERSION = 'v0003';
+var VERSION = 'v0004';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
+  `${GHPATH}/consulta.html`,
+  `${GHPATH}/css/consulta.css`,
   `${GHPATH}/css/default.css`,
   `${GHPATH}/css/header.css`,
   `${GHPATH}/css/vistoria.css`,
   `${GHPATH}/js/image-preview.js`,
   `${GHPATH}/js/localStorage.js`,
   `${GHPATH}/js/menu-mobile.js`,
-  `${GHPATH}/img/pwa-logo.png`
+  `${GHPATH}img/pwa-logo.png`
 ]
 
 var CACHE_NAME = APP_PREFIX + VERSION

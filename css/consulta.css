@@ -1,0 +1,36 @@
+.container-consulta{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-consulta input{
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.container-resultado{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-resultado .container-fonte{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: #DEDEDE;
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

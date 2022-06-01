@@ -67,3 +67,26 @@ function verificarStorage(key){
         }
     }
 }
+
+// consulta todas as keys do local storage e filtra se existe o cnpj específico
+function consultarKeys(){
+    let allKeys = Object.keys(localStorage);
+    let keys = allKeys.sort();
+    let cnpj = document.getElementById('cnpj-consulta').value;
+    let container = document.getElementById('container-resultado');
+
+    for(let item of keys){
+        if(item.includes(cnpj)){
+
+            let fonte = localStorage.getItem(item);
+            fonte = JSON.parse(fonte);
+            console.log(fonte);
+
+            let div = document.createElement('div');
+            div.classList.add('container-fonte');
+            let text = document.createTextNode("Fonte " + fonte.identificacaoDaFonte);
+            div.appendChild(text);
+            container.appendChild(div);
+        }
+    }
+}

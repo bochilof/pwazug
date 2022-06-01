@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/vistoria.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/consulta.css">
+  <title>Document</title>
+
+  <!-- pwa links -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://bochilof.github.io/pwazug/" />
+</head>
+
+<body id="body">
+  <header>
+    <div class="logo">logo</div>
+    <nav class="menu" id="menu">
+      <ul>
+        <li>início</li>
+        <li>upload</li>
+      </ul>
+    </nav>
+    <div class="btn-mobile" onclick="toggleMenu()">
+      <div class="btn-mobile-line"></div>
+      <div class="btn-mobile-line"></div>
+      <div class="btn-mobile-line"></div>
+    </div>
+  </header>
+
+  <div id="container-consulta" class="container-consulta">
+    <input type="text" name="cnpj-consulta" id="cnpj-consulta" placeholder="Informe o CNPJ">
+    <div class="btn" onclick="consultarKeys()">consultar</div>
+  </div>
+
+  <div class="container-resultado" id="container-resultado">
+    
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="js/menu-mobile.js"></script>
+  <script src="js/localStorage.js"></script>
+  <script src="js/image-preview.js"></script>
+</body>
+
+</html>

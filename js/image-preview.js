@@ -1,18 +1,8 @@
-function exibirMiniaturas(){
-    // seleciona o input file
-    let input = document.getElementById('input-file');
-
-    // evento para quando o usuário selecionar imagens
-    input.addEventListener('change', function(e){
-        let tgt = e.target;
-        let files = tgt.files;
-        let fr = new FileReader();
-        fr.onload = function(){
-            document.getElementById('min-a').src = fr.result;
-        }
-        fr.readAsDataURL(files[0]);
-        console.log(fr);
-        console.log(tgt);
-        console.log(files);
-    });
+function msgInputFile(evento){
+  let itens = document.getElementById('input-file').files.length;
+  if(itens <= 1){
+    document.getElementById('form-vistoria-container-foto-miniaturas-label-alerta').innerHTML = itens + ' imagem carregada com sucesso!';
+  }else{
+    document.getElementById('form-vistoria-container-foto-miniaturas-label-alerta').innerHTML = itens + ' imagens carregadas com sucesso!';
+  }
 }
